@@ -111,4 +111,8 @@ SPØRGSMÅL 2.: Why we (because we did not explain about this) followed a patter
 SVAR:
 - Det bruges til at kunne reference til det oprindelige this, hvis f.eks. en context ændres. Se ekempel på L53. (const self = this;). 
 Bliver anvendt fordi,at vores asynkrone timeOut metode ændrer context, og for at kunne opretholde referencen til vores oprindelige this, gemmer vi det sådan.
+
+SPØRGSMÅL 3.: The purpose of the methods call(), apply() and bind()
+SVAR: 
+Via. bind kan vi fortælle hvilken this, som der skal bruges. 
 */
