@@ -55,13 +55,13 @@ function person() {
         age: 0,
         name: "",
          // ES6 (arrow functions). Could also have used inner functions, eg. setAge: function(ageData) {
-        setAge: ((ageData) => {
+        setAge: ((ageData) => { // Using closure down below (age) I suppose? Using our outer variable, in our inner variable
             this.age = ageData;
         }),
-        setName: ((nameData) => {
+        setName: ((nameData) => { // Using closure down below (name) I suppose? Using our outer variable, in our inner variable
             this.name = nameData;
         }),
-        getInfo: (() => {
+        getInfo: (() => { // Using closure down below (name and age) I suppose? Using our outer variable, in our inner variable
             return console.log("Name: " + this.name + ", Age: " + this.age);
         })
     };
